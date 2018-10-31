@@ -1,0 +1,25 @@
+OPTIONS - Integration Response
+	
+Access-Control-Allow-Headers	=	'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'  
+Access-Control-Allow-Origi	    =    'DELETE,GET,HEAD,OPTIONS,PATCH,POST,PUT'
+Access-Control-Allow-Methods    =    '*'
+
+
+POST
+
+Access-Control-Allow-Headers	 = 'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token' 
+Access-Control-Allow-Origin	     = 'DELETE,GET,HEAD,OPTIONS,PATCH,POST,PUT'
+Access-Control-Allow-Credentials = 	'true'	  
+Access-Control-Allow-Methods	 =   '*'
+
+
+text/html
+#set($inputRoot = $input.path('$'))
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Message>
+        <Body>
+            $inputRoot
+        </Body>
+    </Message>
+</Response>
