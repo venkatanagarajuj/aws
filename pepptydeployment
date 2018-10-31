@@ -1,0 +1,34 @@
+ yum install httpd
+1.	     sudo curl -O https://getcomposer.org/composer.phar 
+2.	     sudo chmod +x composer
+3.	     cd /var/www/html/
+4.	     sudo curl -O https://getcomposer.org/composer.phar
+5.	     sudo curl -O https://getcomposer.org/composer.phar
+6.	
+7.	      curl -sS https://getcomposer.org/installer > installer.php
+8.	     curl -sS https://getcomposer.org/installer | php
+9.	     yum install php
+10.	     php -d memory_limit=-1 composer.phar require aws/aws-sdk-php
+11.	     sudo curl -O https://getcomposer.org/composer.phar
+12.	     php installer.php
+13.	      php composer.phar
+php server
+XAMPP Installation Commands 
+1.	wget https://www.apachefriends.org/xampp-files/7.0.23/xampp-linux-x64-7.0.23-0-installer.run
+
+2.	sudo chmod +x xampp-linux-x64-7.0.23-0-installer.run
+
+3.	sudo ./xampp-linux-x64-7.0.23-0-installer.run
+
+4.	sudo /opt/lampp/lampp start
+
+5.	vi /opt/lampp/etc/extra/httpd-xampp.conf
+
+<LocationMatch "^/(?i:(?:xampp|security|licenses|phpmyadmin|webalizer|server-status|server-info))">
+Require local
+ErrorDocument 403 /error/XAMPP_FORBIDDEN.html.var
+</LocationMatch>
+6.	sudo /opt/lampp/lampp restart
+
+https://www.9lessons.info/2015/12/amazon-ec2-setup-with-ubuntu-and-xampp.html
+https://www.9lessons.info/2016/07/backup-all-your-amazon-instance-files.html
